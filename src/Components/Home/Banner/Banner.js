@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Banner.css";
 import { Button } from "@material-ui/core";
 import Search from "../Search/Search";
@@ -15,7 +15,7 @@ const Banner = () => {
           className="banner__searchButton"
           varient="outlined"
         >
-          Search Dates
+          {showSearch ? "Hide" : "Search Dates"}
         </Button>
       </div>
       <div className="banner__info">

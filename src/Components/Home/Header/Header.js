@@ -1,19 +1,20 @@
 import React from "react";
 import "./Header.css";
-
+import { Link } from "react-router-dom";
 import airbnbLogo from "../../../img/airbnb.png";
 
 //Matreial iCons
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import {Avatar} from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 
 const Header = () => {
   return (
     <div className="header">
-      <img className="header__icon" src={airbnbLogo} alt="airbnb" />
-
+      <Link to="/">
+        <img className="header__icon" src={airbnbLogo} alt="airbnb" />
+      </Link>
       <div className="header__center">
         <input type="text" />
         <SearchIcon />

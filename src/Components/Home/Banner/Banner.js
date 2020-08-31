@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Banner.css";
 import { Button } from "@material-ui/core";
 import Search from "../Search/Search";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -19,11 +20,14 @@ const Banner = () => {
         </Button>
       </div>
       <div className="banner__info">
-        <h1>Get out and stretch yout imagination</h1>
+        <h1>Get out and stretch your imagination</h1>
         <h5>
           Plan a different kind of getaway to uncover the hidden gems near you.
         </h5>
-        <Button varien="outlined">Explore Nearby</Button>
+
+        <Button varien="outlined">
+          <Link to="search">Explore Nearby </Link>
+        </Button>
       </div>
     </div>
   );

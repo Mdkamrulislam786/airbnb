@@ -40,7 +40,29 @@
     color: #ff7779;
 }
 
+.banner a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .banner__info>h5 {
     margin-top: 10px;
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    .banner__info {
+        padding-top: 5vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 120px;
+        width: 150px;
+    }
+
+    .banner__info>h1 {
+        font-size: 18px;
+    }
+
+    .banner__info>h5 {
+        font-size: 12px;
+    }
 }

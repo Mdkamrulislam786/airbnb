@@ -71,3 +71,29 @@
     bottom: 20px;
     right: 30px;
 }
+
+@media (min-width:320px) and (max-width:480px) {
+    .searchResult>img {
+        height: 120px;
+        width: 350px;
+    }
+
+    .searchResult__infoTop>h3 {
+        font-size: 14px;
+    }
+
+    .searchResult__infoTop>p {
+        font-size: 10px;
+    }
+
+    .searchResults__price>h2,
+    p {
+        font-size: 11px;
+    }
+
+    .searchResult__heart {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+}
